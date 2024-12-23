@@ -3,7 +3,10 @@ name = "bat"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
 bevy = "0.15.0"
+abm = { path = "abm" }
+rand = "0.8.5"
+
+[workspace]
+members = [".", "abm"]
